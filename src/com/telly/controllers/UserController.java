@@ -29,6 +29,18 @@ public class UserController {
 	ReserveService reserveService;
 
 
+	@RequestMapping("/login")
+	public String showLogin() {
+		return "login";
+	}
+		
+	@RequestMapping("/loggedout")
+	public String showLogout() {
+		return "loggedout";
+	}
+	
+
+
 	
 	@RequestMapping("/createaccount")
 	public String createAccount(Model model, Principal principal) {
@@ -51,6 +63,7 @@ public class UserController {
 		userService.create(user);
 		
 		return "home";
+
 
 
 }
