@@ -43,6 +43,7 @@ public class BusController {
 		return "home";
 
 	}
+
 	@RequestMapping("/results")
 	public String leave(Model model, Principal principal) {
 
@@ -62,5 +63,6 @@ public class BusController {
 		return "results";
 
 	}
+
 
 }
